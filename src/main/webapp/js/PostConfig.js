@@ -5,3 +5,8 @@
 // null'ing of global vars need to be after init.js
 window.ICONSEARCH_PATH = null;
 window.ICON_SERVICE_PATH = null;
+
+if (urlParams['jam'] == '1')
+{
+    mxscript('jam/native.js?v=4');
+}

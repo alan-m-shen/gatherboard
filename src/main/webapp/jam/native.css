@@ -1,0 +1,47 @@
+/* Styles the existing EditorUi; diagram styling remains native cell styles. */
+body.jam-native {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    --jam-purple: #8554f5;
+}
+.jam-native .geMenubarContainer {background: #fff !important; border-bottom: 1px solid #eeeaf2 !important;}
+.jam-native .geToolbarContainer {background: #fff !important; border-bottom: 1px solid #eeeaf2 !important;}
+.jam-native .geSidebarContainer, .jam-native .geSidebar {background: #fff !important;}
+.jam-native .geSidebarContainer {border-right: 1px solid #eeeaf2 !important;}
+.jam-native .geFormatContainer {background: #fff !important; border-left: 1px solid #eeeaf2 !important;}
+.jam-native .geTitle {background: #fff !important; color: #40384b !important; font-weight: 600;}
+.jam-native .geItem {border-radius: 8px;}
+.jam-native .geItem:hover {background-color: #f2ebff !important;}
+.jam-native .geBtn {border-radius: 7px;}
+.jam-native .gePrimaryBtn {background: #8554f5 !important; border-color: #8554f5 !important;}
+.jam-native .geDialog {border-radius: 14px; box-shadow: 0 12px 70px #27203025;}
+.jam-native-dock {
+    position: fixed; z-index: 5; bottom: 46px; left: 50%; transform: translateX(-50%);
+    display: flex; align-items: center; gap: 5px; padding: 8px 14px;
+    background: #fff; border: 1px solid #e9e6ed; border-radius: 16px;
+    box-shadow: 0 3px 16px #29203512;
+}
+.jam-dock-label {font-size: 11px; color: #8b8195; margin-right: 8px;}
+.jam-native-tool {width: 52px; display: flex; flex-direction: column; align-items: center; gap: 2px;}
+.jam-native-tool .geItem {margin: 0 !important; background: transparent;}
+.jam-native-tool > span {font-size: 10px; color: #726879; pointer-events: none;}
+.jam-recover {position: fixed; right: 16px; bottom: 48px; z-index: 5; background: #fff; color: #715293; border: 1px solid #e9e6ed; border-radius: 8px; padding: 9px 12px; cursor: pointer;}
+@media (max-width: 700px) {
+    .jam-native-dock {max-width: calc(100vw - 24px); bottom: 42px; padding: 6px; gap: 0;}
+    .jam-native-tool {width: 44px;}
+    .jam-dock-label {display: none;}
+    .jam-recover {bottom: 130px;}
+}
+/* Use draw.io's own Sketch theme for floating native file/zoom controls. */
+.jam-native.geSketch .geVerticalToolbar {display: none !important;}
+.jam-native.geSketch .jam-native-dock {bottom: 22px;}
+.jam-native.geSketch .geToolbarContainer {border: 1px solid #e9e6ed !important; border-radius: 13px !important; box-shadow: 0 3px 12px #29203510 !important;}
+.jam-main-menu {align-items: center; gap: 3px; padding: 7px !important; border-radius: 13px !important;}
+.jam-file-title {font-size: 13px; color: #302936; padding: 0 14px 0 10px; border-left: 1px solid #eeeaf2; margin-left: 5px; white-space: nowrap; max-width: 220px; overflow: hidden; text-overflow: ellipsis;}
+.jam-library-button {border: 0; border-left: 1px solid #eeeaf2; background: white; color: #766388; padding: 12px; cursor: pointer; font-size: 12px;}
+.jam-library-button:hover {background: #f3edfc;}
+.jam-native-save {position: fixed; right: 16px; top: 14px; z-index: 5; border: 0; border-radius: 9px; padding: 12px 18px; background: #8554f5; color: white; cursor: pointer; font-size: 12px;}
+.jam-native.geSketch .jam-recover {right: 18px; bottom: 64px;}
+.jam-native .geDiagramContainer {font-family: Arial, "PingFang SC", sans-serif;}
+@media (max-width: 700px) {.jam-native-dock {overflow-x: auto; justify-content: flex-start;} .jam-file-title {max-width: 110px;} .jam-dock-label {display:none;}}
+.jam-native.geSketch .jam-main-menu {left: 12px !important; top: 12px !important;}
+.jam-native.geSketch .geStatus {margin-right: 104px !important;}

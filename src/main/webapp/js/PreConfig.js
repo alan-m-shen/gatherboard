@@ -11,3 +11,28 @@ window.DRAWIO_LIGHTBOX_URL = null; // Replace with your lightbox URL, eg. https:
 window.DRAW_MATH_URL = 'math4/es5';
 window.DRAWIO_CONFIG = null; // Replace with your custom draw.io configurations. For more details, https://www.drawio.com/doc/faq/configure-diagram-editor
 urlParams['sync'] = 'manual';
+
+// Jam is a configuration of the full draw.io editor, not a second canvas app.
+if (urlParams['jam'] == '1')
+{
+    window.DRAWIO_CONFIG = {
+        defaultGridSize: 20,
+        gridSteps: 1,
+        defaultGridEnabled: true,
+        defaultGridColor: '#e4e2e7',
+        defaultPageVisible: false,
+        defaultPageBackgroundColor: '#faf9f7',
+        defaultLibraries: 'general',
+        defaultFonts: ['Arial', 'Helvetica', 'Verdana'],
+        defaultColors: ['FFE299', 'F8C8DA', 'D9C9F5', 'BDDDF9', 'C7E9CA', 'FFFFFF', '29252D'],
+        defaultVertexStyle: {fontFamily: 'Arial', fontSize: '18', fontColor: '#29252D',
+            fillColor: '#D9C9F5', strokeColor: '#81738F', rounded: '1',
+            absoluteArcSize: '1', arcSize: '12', whiteSpace: 'wrap', html: '1'},
+        defaultEdgeStyle: {strokeColor: '#81738F', strokeWidth: '2', rounded: '1',
+            edgeStyle: 'orthogonalEdgeStyle', fontFamily: 'Arial', fontSize: '14'},
+        compressXml: false,
+        compressStyles: false,
+        enableAi: false,
+        css: '@import url("jam/native.css?v=5");'
+    };
+}

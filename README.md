@@ -1,51 +1,46 @@
-# draw.io
+# Gatherboard
 
-## About
+**A quiet space for your ideas.**
 
-draw.io is a configurable diagramming and whiteboarding application, jointly owned and developed by draw.io Ltd (previously named JGraph) and draw.io AG. We also run a production deployment at https://app.diagrams.net.
+Gatherboard is a personal whiteboard built on the **native draw.io editor**. It brings a FigJam-inspired floating interface and a small set of ready-to-use shapes to draw.io, while keeping its drawing tools, custom libraries, Scratchpad, file formats, and undo history.
 
-## License
+![Gatherboard preview](docs/jam/preview.jpg)
 
-The source code in this repository is licensed under the [Apache License 2.0](LICENSE).
+## Start locally
 
-The icon sets, stencil libraries, and diagram templates are provided under the following terms:
+Requires Python 3 and a modern browser. No package installation or build step is needed.
 
-> The icon sets and stencil libraries included in this software, and any derivatives thereof (including conversions to other formats, traced reproductions, substantially similar visual representations, or AI-generated images created using these icons as reference or training input), may not be used as software assets in, distributed for use with, or incorporated into Atlassian products or products distributed through the Atlassian marketplace or plugin ecosystem, without explicit written permission.
->
-> This restriction does not apply to end-user diagram output (such as exported images or documents) created using this software.
+```sh
+./run-gatherboard.sh
+```
 
-Some icons are originally defined by third-party copyright holders; we have verified that all original licenses permit use in this project. Additional third-party JavaScript libraries are included, all with licenses compatible with Apache 2.0 (no GPL or AGPL).
+Open **http://127.0.0.1:8765/jam.html**.
 
-We make no copyright claim on diagrams you create with this software.
+## What it does
 
-## Contributions
+- Native draw.io Sketch interface with floating controls and a reusable-shape dock.
+- Sticky notes, rounded rectangles, circles, diamonds, text, connectors, and sections.
+- Native custom shape libraries and Scratchpad for collecting and reusing your own components.
+- A uniform native grid configured with `defaultGridSize: 20` and `gridSteps: 1`.
+- Native drag previews, snapping, zoom, clipboard, undo, formatting, and file operations.
+- Uncompressed XML by default, suitable for local ownership and Git history.
+- No emoji or freehand tools in the Gatherboard interface.
 
-We do not accept pull requests. The project is developed entirely by the core team.
+## Built on draw.io
 
-## Scope
+This is a fork of [jgraph/drawio](https://github.com/jgraph/drawio), not a separate drawing engine. Gatherboard uses `DRAWIO_CONFIG`, custom CSS, and `Draw.loadPlugin` to adapt the complete draw.io App / EditorUi. The shortcut dock uses the same Sidebar template factories as native libraries.
 
-draw.io is a diagramming and whiteboarding application. It is not an SVG editor. SVG export is intended for embedding in web pages, not for editing in other tools.
+The customizations live in `src/main/webapp/jam/`, with small integration changes to `PreConfig.js`, `PostConfig.js`, and `bootstrap.js`. Open `/index.html` without `jam=1` to use the upstream editor.
 
-Note that draw.io does not support real-time collaborative editing in this version, currently.
+## Status
 
-For issues or questions about the editor in any draw.io product, the issue tracker and discussions here are a good starting point.
+Early working prototype. Desktop drag placement has been checked at 100%, at 50%, and after scrolling. Native Scratchpad collection and reuse have been verified. Mobile touch, complex custom shapes, and broader cross-browser compatibility still need testing. This is not a pixel-perfect FigJam clone and has no added collaboration service.
 
-## Running
+- [中文运行与架构说明](JAM.md)
+- [Implementation notes](docs/jam/PLAN.md)
+- [Verification notes](docs/jam/VERIFICATION.md)
+- [Upstream README](README.upstream.md)
 
-Options for running draw.io:
+## License and attribution
 
-- Fork this repository and [publish to GitHub Pages](https://help.github.com/categories/github-pages-basics/) for a [fully functional editor](https://jgraph.github.io/drawio/src/main/webapp/index.html) (without integrations)
-- Use the [official Docker image](https://github.com/jgraph/docker-drawio)
-- Download [draw.io Desktop](https://get.diagrams.net)
-
-Packaged .war files are available on the [releases page](https://github.com/jgraph/draw.io/releases).
-
-## Supported Browsers
-
-Chrome 123+, Firefox 120+, Safari 17.5+, Opera 109+, Edge 123+, WebView Android 137+, Safari iOS 18.5+.
-
-## Trademark
-
-draw.io is a registered EU trademark (#018062448).
-
-Do not use the draw.io name or logo in ways that suggest affiliation with, endorsement by, or sponsorship by draw.io. Do not use draw.io logos for your own business, product, project, domain, or social media presence. Do not modify the draw.io logos. Use of draw.io trademarks requires prior written permission.
+The source code retains the upstream [Apache License 2.0](LICENSE). Upstream icon sets, stencil libraries, templates, and third-party assets retain their own applicable terms; see the [upstream README](README.upstream.md#license). Gatherboard is not affiliated with Figma. Diagram files created by users remain their own.

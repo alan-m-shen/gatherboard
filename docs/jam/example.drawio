@@ -1,0 +1,68 @@
+<mxfile host="Jam local" version="1">
+  <diagram id="jam-board" name="A little room for big ideas">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="02   Make it happen" jamType="section" id="8e55857b-a55f-4a11-8b40-2a1a45373fe0">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=#F1EFF5;fillOpacity=65;strokeColor=#D5D0DD;rounded=1;absoluteArcSize=1;arcSize=20;align=left;verticalAlign=top;spacingTop=14;spacingLeft=22;fontSize=20;fontStyle=1;" vertex="1">
+            <mxGeometry height="450" width="420" x="770" y="190" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="01   Room to explore" jamType="section" id="d6b2e645-4fbc-4baf-9627-92e6f5e8184e">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=#F1EFF5;fillOpacity=65;strokeColor=#D5D0DD;rounded=1;absoluteArcSize=1;arcSize=20;align=left;verticalAlign=top;spacingTop=14;spacingLeft=22;fontSize=20;fontStyle=1;" vertex="1">
+            <mxGeometry height="450" width="660" x="60" y="190" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Good things start with a little space." jamType="text" id="d80c5e84-6a49-4358-b49d-20a251d90378">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;spacing=0;fontSize=28;" vertex="1">
+            <mxGeometry height="60" width="1030" x="60" y="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="把零散的想法放在一起，看看会发生什么。" jamType="text" id="769d59ee-6a36-4fb8-9b4a-a67914de3994">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;spacing=0;fontSize=28;" vertex="1">
+            <mxGeometry height="40" width="850" x="60" y="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="What if we made&#10;more room for&#10;small adventures?" jamType="sticky" id="2b90cbbd-849f-4fd5-803a-ef93f65ae037">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=#FFE299;strokeColor=none;rounded=0;" vertex="1">
+            <mxGeometry height="180" width="180" x="100" y="280" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="每周留一个下午&#10;给好奇心。&#10;&#10;不急着找到答案。" jamType="sticky" id="01576f9a-a44c-4ab7-bae2-5503b0a34dc6">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=#D9C9F5;strokeColor=none;rounded=0;" vertex="1">
+            <mxGeometry height="180" width="180" x="310" y="290" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Less scrolling.&#10;More making." jamType="sticky" id="961990d0-d971-4a77-991e-4cbaa12e9421">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=#F8C8DA;strokeColor=none;rounded=0;" vertex="1">
+            <mxGeometry height="180" width="170" x="510" y="280" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Collect first. Connect the dots later." jamType="text" id="387cdd47-d707-4e95-a813-2d15c4796dad">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=none;strokeColor=none;align=left;spacing=0;fontSize=28;" vertex="1">
+            <mxGeometry height="50" width="490" x="110" y="520" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="A tiny first step" jamType="shape" id="e50b150d-1f2e-4232-b7de-8cc9fb485d28">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;shape=rectangle;fillColor=#C7E9CA;strokeColor=#77678D;rounded=1;absoluteArcSize=1;arcSize=16;" vertex="1">
+            <mxGeometry height="80" width="280" x="830" y="290" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Something worth sharing" jamType="shape" id="8510c0c1-28c6-40f1-85f6-f8ee100e5433">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;shape=rectangle;fillColor=#BDDDF9;strokeColor=#77678D;rounded=1;absoluteArcSize=1;arcSize=16;" vertex="1">
+            <mxGeometry height="80" width="280" x="830" y="470" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="b352c863-f9b8-4c70-86f4-dc61fcb47013" edge="1" parent="1" source="e50b150d-1f2e-4232-b7de-8cc9fb485d28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#8A759E;strokeWidth=2;endArrow=block;endFill=1;fontSize=13;fontColor=#736480;labelBackgroundColor=#F4F2F7;" target="8510c0c1-28c6-40f1-85f6-f8ee100e5433" value="make it real">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="✦" jamType="stamp" id="4cfca8ef-12df-4863-a1a3-083425c36931">
+          <mxCell parent="1" style="fontFamily=Helvetica;fontSize=20;fontColor=#302B37;whiteSpace=wrap;html=0;overflow=hidden;spacing=18;align=center;verticalAlign=middle;strokeWidth=1.5;fillColor=none;strokeColor=none;fontSize=42;spacing=0;" vertex="1">
+            <mxGeometry height="60" width="60" x="1100" y="80" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

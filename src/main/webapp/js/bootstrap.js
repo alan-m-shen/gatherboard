@@ -292,7 +292,7 @@ if (urlParams['dev'] == '1')
 
     mxForceIncludes = false;
 
-    mxscript(drawDevUrl + 'js/PreConfig.js');
+    mxscript(drawDevUrl + 'js/PreConfig.js' + (urlParams['jam'] == '1' ? '?jam=5' : ''));
     mxscript(drawDevUrl + 'js/diagramly/Init.js');
     mxscript(geBasePath + '/Init.js');
     mxscript(mxBasePath + '/mxClient.js');
@@ -315,7 +315,7 @@ if (urlParams['dev'] == '1')
         // Layout with "ElkLayout.runWithDialog is not a function".
     }
 
-    mxscript(drawDevUrl + 'js/PostConfig.js');
+    mxscript(drawDevUrl + 'js/PostConfig.js' + (urlParams['jam'] == '1' ? '?jam=5' : ''));
 }
 else
 {
@@ -331,6 +331,7 @@ else
         {
             mxscript('js/app.min.js', function()
             {
+                if (urlParams['jam'] == '1') App.initPluginCallback();
                 mxScriptsLoaded = true;
                 checkAllLoaded();
                 
@@ -361,7 +362,7 @@ else
                                         // defined.
                                         mxscript('js/plantuml/drawio-plantuml.min.js', function()
                                         {
-                                            mxscript('js/PostConfig.js');
+                                            mxscript('js/PostConfig.js' + (urlParams['jam'] == '1' ? '?jam=5' : ''));
                                         });
                                     });
                                 });
@@ -371,14 +372,14 @@ else
                 }
                 else if (!supportedDomain)
                 {
-                    mxscript('js/PostConfig.js');
+                    mxscript('js/PostConfig.js' + (urlParams['jam'] == '1' ? '?jam=5' : ''));
                 }
             });
         };
         
         if (!supportedDomain || mxIsElectron)
         {
-            mxscript('js/PreConfig.js', loadAppJS);
+            mxscript('js/PreConfig.js' + (urlParams['jam'] == '1' ? '?jam=5' : ''), loadAppJS);
         }
         else
         {
